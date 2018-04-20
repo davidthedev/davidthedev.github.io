@@ -79,7 +79,7 @@ account.getBalance();
 
 {% endhighlight %}
 
-In the above example we are emulating a very simple bank account. We have a function <code>bankAccount()</code>, inside of the function we are storing <code>balance</code> and a function that updates the balance - <code>updateAccount()</code>. Finally, we are returning an object which allows to add, subtract and show balance. We are then storing the function declaration in a variable <code>account</code>, depositing into the account and getting the balance back. When you run this code, you should see the output <code>10</code>. If we try accessing a function that we are not returning <code>updateAccount()</code> we'll get an error. Why you might wonder? Well, the three public functions that we are returning are closures and have access to the private <code>updateAccount</code> method due to the lexical scoping. There is also a single lexical environment which is shared by these functions.
+In this short example we are emulating a very simple bank account. We have a function <code>bankAccount()</code>, inside of this function (in its scope) we are storing a variable <code>balance</code> and a function that updates the balance - <code>updateAccount()</code>. Finally, we are returning an object which allows to add, subtract and show balance. Essentially, only the desired functionality is being exposed this way. When you run this code, you should see the account balance - <code>10</code>. If we try accessing <code>updateAccount()</code> we'll get an error. Why you might wonder? Well, we are accessing the parent scope from the object that we are returning but protecting the guts of <code>updateAccount()</code>. The three functions that we are returning are closures and have access to <code>updateAccount</code> method due to the lexical scoping. There is also a single lexical environment which is shared by these functions. This way we are able to only expose we want and protect the rest.
 
 <b>- Loops</b>
 
@@ -105,7 +105,7 @@ check()
 
 {% endhighlight %}
 
-Run this code and you will be surprised. When I first came across this, I know I was. So what happens here is that out closure gets the value of <code>i</code> after the entire loop runs. To get this working the way we expect it to work (to get the value of i on each iteration) we need to use the Immediately Invoked Function Expression.
+Run this code and you will be surprised. When I first came across this, I know I was. So what happens here is that out closure gets the value of <code>i</code> only after the entire loop runs. To get this working the way we expect it to work (to get the value of i on each iteration) we need to use the Immediately Invoked Function Expression (IIFE).
 
 {% highlight javascript %}
 
@@ -129,4 +129,4 @@ check()
 
 Now we are immediately invoking the function and passing the value of <code>i</code> into it.
 
-I hope that all of the above made sense and wasn't too complicated.
+That's it for this post and I hope that all of the above made sense and wasn't too complicated.

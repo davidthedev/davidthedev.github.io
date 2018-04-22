@@ -131,7 +131,7 @@ Now we are immediately invoking the function and passing the value of <code>i</c
 
 That's it for this post and I hope that all of the above made sense and wasn't too complicated. I will try to update this articles as I come across more examples.
 
-Further reading suggestions:
+<b><i>Further reading suggestions:</i></b>
 
 <a href="https://github.com/getify/You-Dont-Know-JS/blob/master/scope%20%26%20closures/ch5.md">You don't know JS - Closures</a>
 

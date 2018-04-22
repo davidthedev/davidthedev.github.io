@@ -133,11 +133,8 @@ That's it for this post and I hope that all of the above made sense and wasn't t
 
 Further reading suggestions:
 
-- You don't know JS
-https://github.com/getify/You-Dont-Know-JS/blob/master/scope%20%26%20closures/ch5.md
+<a href="https://github.com/getify/You-Dont-Know-JS/blob/master/scope%20%26%20closures/ch5.md">You don't know JS - Closures</a>
 
-- Master the JavaScript Interview: What is a Closure?
-https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-closure-b2f0d2152b36
+<a href="https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-closure-b2f0d2152b36">Master the JavaScript Interview: What is a Closure?</a>
 
-- Understand JavaScript Closures With Ease
-http://javascriptissexy.com/understand-javascript-closures-with-ease/
+<a href="http://javascriptissexy.com/understand-javascript-closures-with-ease">Understand JavaScript Closures With Ease</a>

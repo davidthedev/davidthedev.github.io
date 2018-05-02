@@ -174,3 +174,6 @@ Now <code>this</code> is bound to <code>car</code> and works how we would expect
 
 Further reading suggestions:
 
+<a href="https://github.com/getify/You-Dont-Know-JS/blob/master/this%20%26%20object%20prototypes/ch1.md">You don't know JS - this & Object Prototypes</a>
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this">MDN web docs - this</a>
